@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
 public class MemberService {
 
     // 왜 다른 객체를 사용할까..
@@ -19,7 +18,6 @@ public class MemberService {
 
     // 외부에서 객체 넣어주도록 바꿈
     // DI: dependency injection 라고 함
-    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }

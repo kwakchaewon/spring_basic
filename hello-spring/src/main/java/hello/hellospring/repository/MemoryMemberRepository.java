@@ -9,7 +9,6 @@ import java.util.*;
 
 // 인터페이스를 상속 받아 메서드 구현
 
-@Repository
 public class MemoryMemberRepository implements MemberRepository{
 
     private static Map<Long, Member> store = new HashMap<>();
