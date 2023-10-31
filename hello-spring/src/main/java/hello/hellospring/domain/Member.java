@@ -10,9 +10,8 @@ import javax.persistence.Id;
 @Entity
 public class Member {
 
-    // Id: PK 선언
-    // eneratedValue(strategy = GenerationType.IDENTITY): 자동으로 ID 값 생성함을 알려주고 매핑
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id // PK 선언
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // 기본키 자동 생성 (strategy=생성전략), 증가열에 따라 자동으로 기본키 생성
     private Long id;
     private String name;
     // Column 명과 일치하지 않을 경우 @Column(name=) 으로 매핑
